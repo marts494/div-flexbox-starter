@@ -65,12 +65,11 @@ video {
 /*
  * Remove default fieldset styles.
  */
-
-fieldset {
+ fieldset {
     border: 0;
     margin: 0;
     padding: 0;
-}
+ }    
 
 /*
  * Allow only vertical resizing of textareas.
@@ -97,12 +96,14 @@ textarea {
 
 
 html {
-  background-color: #fff;
+  background-color: #222;
   height: 100%;
+  width: 100%;
 }
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
   padding: 2em;
   font-size: 1.25em;
   height: 100%;
@@ -110,20 +111,34 @@ body {
 
 .wrapper {
   /*add display:flex and set justify-content to space-between*/
-  font-weight: 700;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  
 }
 
 .div-1, .div-2, .div-3 {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 25px;
   color: #fff;
   line-height: 1.5em;
-  font-size: 1.6em;
-  background-color: #f16059;
-  height: 300px;
+  font-size: 1.25em;
+  width: 30%;
+  height: auto;
 }
 
+.div-1, .div-2 {
+    border-right:  1px solid #fff; 
+}
 
-
+.wrapper span {
+    font-family: 'Lora', sans-serif;
+    font-size: 1.3em;
+}
 
 /* ==========================================================================
    Helper classes
